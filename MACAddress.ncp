@@ -1,0 +1,31 @@
+<Project>
+  <Name>System</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Net</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>MACAddress</Name>
+        <Access>Public</Access>
+        <Location left="10" top="10" />
+        <Size width="501" height="398" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private const long MAXLONGADDRESS = 281474976710655L</Member>
+        <Member type="Field">private const long MINLONGADDRESS = 0L</Member>
+        <Member type="Field">private byte[] _byte_address</Member>
+        <Member type="Property">public long Address { get; set; }</Member>
+        <Member type="Property">public MACAddress None { get; }</Member>
+        <Member type="Constructor">public MACAddress(byte[] address)</Member>
+        <Member type="Constructor">public MACAddress(long newAddress)</Member>
+        <Member type="Method">public byte[] GetAddressBytes()</Member>
+        <Member type="Method">public static MACAddress Parse(string macString)</Member>
+        <Member type="Method">public static bool TryParse(string macString, out MACAddress address)</Member>
+        <Member type="Method">public override bool Equals(object obj)</Member>
+        <Member type="Method">public override int GetHashCode()</Member>
+        <Member type="Method">public override string ToString()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships />
+  </ProjectItem>
+</Project>
